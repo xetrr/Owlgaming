@@ -1,0 +1,13 @@
+.git
+.cache
+.local
+.migration-backup
+attached_assets
+artifacts/api-server
+artifacts/mockup-sandbox
+.agents
+DEPLOY-VERCEL.md
+SECURITY.md
+replit.md
+.replit
+.replitignore

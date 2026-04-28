@@ -1,0 +1,7 @@
+{
+  "buildCommand": "pnpm run build",
+  "outputDirectory": "artifacts/owlgaming/dist/public",
+  "rewrites": [
+    { "source": "/((?!api/).*)", "destination": "/index.html" }
+  ]
+}
