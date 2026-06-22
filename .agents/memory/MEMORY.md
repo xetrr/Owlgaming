@@ -1,0 +1,2 @@
+- [Supabase-to-Replit migration](supabase-migration.md) — replaced Supabase auth/DB with Replit PostgreSQL + session auth; pg must be in api-server externals and installed as a direct dep.
+- [DB table bootstrap](db-bootstrap.md) — Drizzle schema is an empty placeholder; tables must be created with raw SQL (users, games, hard_drives, accessories, favorites). Run once per fresh DB.

@@ -1,0 +1,31 @@
+kind = "web"
+previewPath = "/"
+title = "Owlgaming"
+version = "1.0.0"
+id = "artifacts/owlgaming"
+router = "path"
+
+[[integratedSkills]]
+name = "react-vite"
+version = "1.0.0"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 20929
+
+[services.development]
+run = "pnpm --filter @workspace/owlgaming run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/owlgaming", "run", "build" ]
+publicDir = "artifacts/owlgaming/dist/public"
+serve = "static"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "20929"
+BASE_PATH = "/"
